@@ -43,6 +43,23 @@ CREATE TABLE consommable(
 	foreign key (transfo) references transformation(id_transfo),
 	foreign key (nom_type) references type(nom)
 	);
+	
+INSERT INTO transformation VALUES
+(1, 'Guppy', 'Fly + spawn blue fies/spider'),
+(2, 'Beelzebub', 'Fly + turn flies into blue flies'),
+(3, 'Mom', 'Gain a knife behind Isaac'),
+(4, 'Leviathan', 'Fly + +2 black heart'),
+(5, 'Seraphim', 'Fly + +3 soul heart'),
+(6, 'Bob', 'Leave trail of poison'),
+(7, 'Fun Guy', 'HP up'),
+(8, 'Conjoined', 'Fire tears in 3 direction + DMG + tears down'),
+(9, 'Spun', 'DMG + speed up'),
+(10, 'Oh Crap', 'Heal when destroy poop'),
+(11, 'Super Bum', 'Gain Super Bum'),
+(12, 'Bookworm', 'Shoots 2 shots sometimes'),
+(13, 'Spider Baby', 'Spiderbro + spawn blue spiders'),
+(14, 'Adulthood', 'HP up'),
+(15, 'Stompy', 'Create dust clouds + rock waves');
 
 INSERT INTO item_pool VALUES
 (000, 'BEGGAR'),
@@ -113,7 +130,9 @@ INSERT INTO item_pool VALUES
 (169, 'ITM + SEC + CHEST'),
 (670, 'SEC + DEV + BEGG'),
 (126, 'ITM + SHOP + SEC'),
-(136, 'ITM + LIB + SEC');
+(136, 'ITM + LIB + SEC'),
+(250, 'SHOP + BOSS + BEGG'),
+(470, 'CUR + DEV + BEGG');
 
 INSERT INTO objet VALUES
 (1, 'The Sad Onion', 'Tears up', null, 001), 
@@ -519,20 +538,3 @@ INSERT INTO trinket VALUES
 (59, 'Cain''s Eye', 'May you see you destination'),
 (60, 'Eve''s Bird Foot', 'Revenge from beyond'),
 (61, 'The Left Hand', 'The left path reaps dark rewards');
-
-INSERT INTO transformation VALUES
-(1, 'Guppy', 'Fly + spawn blue fies/spider'),
-(2, 'Beelzebub', 'Fly + turn flies into blue flies'),
-(3, 'Mom', 'Gain a knife behind Isaac'),
-(4, 'Leviathan', 'Fly + +2 black heart'),
-(5, 'Seraphim', 'Fly + +3 soul heart'),
-(6, 'Bob', 'Leave trail of poison'),
-(7, 'Fun Guy', 'HP up'),
-(8, 'Conjoined', 'Fire tears in 3 direction + DMG + tears down'),
-(9, 'Spun', 'DMG + speed up'),
-(10, 'Oh Crap', 'Heal when destroy poop'),
-(11, 'Super Bum', 'Gain Super Bum'),
-(12, 'Bookworm', 'Shoots 2 shots sometimes'),
-(13, 'Spider Baby', 'Spiderbro + spawn blue spiders'),
-(14, 'Adulthood', 'HP up'),
-(15, 'Stompy', 'Create dust clouds + rock waves');
