@@ -1,0 +1,24 @@
+*
+{
+	font-family: "Arial Black", sans-serif;
+}
+
+img
+{
+	display: inline-block;
+}
+
+header
+{
+	text-align: center;
+	font-size: 2.2em;
+}
+
+header, img
+{
+	text-align: left;
+}
+h1
+{
+	color : #C11C1F;
+}
